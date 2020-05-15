@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
+  <title>Angelyn Liem's Resume</title>
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +14,81 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+  <header>
+  <h1>Angelyn Liem</h1>
+  <nav class="navItems">
+    <a href="#home">Home</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+</div>
+
+<section class="intro">
+  <h2>Summary</h2>
+  <p>Angelyn has 6+ years of experience in program management in the media, education, and nonprofit industries.
+    Her ambition, work ethics, and operational excellence have led to being promoted quickly in her previous jobs.
+    Now, she is adding Full Stack Web Development and Android Development to her list of expertise.
+    With a master's in social work/social enterprise administration from Columbia University, she is excited to 
+    contribute her skills and experience to a mental health edtech company in the near future! She loves nature
+    and spending time with her family, especially her two little boys.</p>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Full Stack Web: HTML, CSS, JavaScript, Git, Github, Visual Studio, Slack</li>
+      <li>Android Dev: XML, Java</li>
+  </ul>
+</section>
+
+<section class="work">
+  <h2>Work Experience</h2>
+  <div>
+    <h3>Executive Director</h3>
+    <h3>Global Entrepreneurship Program Indonesia, Jakarta - Indonesia</h3>
+    <h3>July 2013 - April 2016</h3>
+    <p>Started out as a Program Manager managing the launch of Ciputra GEPI incubator 
+      and promoted to Executive Director role after a year, at the age of 29. 
+    During her time as ED, Angelyn oversaw the launch of Angel Investment Network Indonesia,
+  the first partnership in Asia to run Hack Reactore Core's Code Ramp, the launch of Ciputra GEPI 
+Incubation Program, and the upgrading of GEPI's website to being more responsive and mobile-friendly. 
+Angelyn was the first ED of GEPI to start revenue-generating, financially sustainable programs 
+(as opposed to relying heavily on donations/events) and covered 70% of its operational cost within a year</p>
+  </div>
+  <div>
+    <h3>Program Manager</h3>
+    <h3>Berita Satu Media Group, Jakarta - Indonesia</h3>
+    <h3>August 2008 - August 2011</h3>
+    <p>Angelyn started out as a Management Trainee for Jakarta Globe, an English language newspaper.
+      She was entrusted to introduce the paper to Ambassadors and Press Attaches at various embassies, 
+      and was promoted to Social Media Manager after increasing the paper's social media presence on Facebook
+      from 500 likes to over 100,000 likes on Facebook within 6 months, making Jakarta Globe the largest 
+      community on Facebook in Southeast Asia at the time.</p>
+  </div>
+
+</section>
+
+<footer>
+  <section class="contact">
+    <h2>Get in touch</h2>
+    <address>angelynaliem@gmail.com</address>
+    <form id="contact" action="action_page.php">
+      <div>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="First name">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Last name">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="emailaddress" placeholder="Email Address">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here" style="height: 200px;"></textarea>
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+  </section> 
+</footer>
 </body>
 </html>
