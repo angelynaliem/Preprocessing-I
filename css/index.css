@@ -1,1 +1,41 @@
-/* Compile your LESS file! */
+html {
+  font-size: 62.5%;
+}
+#titleColor {
+  color: #FF5733;
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font: bold;
+}
+#subtitleColor {
+  color: #046E3F;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font: italic;
+}
+#paragraphColor {
+  color: #404244;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navMixin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footerMixin {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.intro h2 {
+  color: #046E3F;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font: italic;
+}

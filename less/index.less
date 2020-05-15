@@ -1,59 +1,45 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html {
+	font-size: 62.5%
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+#titleColor {
+	color: #FF5733;
+	font-size: 3rem; 
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font: bold;
 }
 
-html, body {
-    height: 100%;
+#subtitleColor {
+	color: #046E3F;
+	font-size: 2rem; 
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font: italic;
 }
 
+#paragraphColor {
+	color: #404244;
+	font-size: 1rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navMixin {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footerMixin {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	background-color: burlywood;
+	.navMixin();
+}
+
+.intro {
+	h2 {
+		#subtitleColor;
+	}
+}
