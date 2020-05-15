@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
   <title>Angelyn Liem's Resume</title>
-  <link rel="stylesheet" href="css/index.less">
+  <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -36,19 +37,19 @@
 </section>
 
 <section class="skills">
+  <h2>Skills</h2>
   <ul>
-    <li>
-      <p>Full Stack Web: HTML, CSS, JavaScript, Git, Github, Visual Studio, Slack</p>
-      <p>Android Dev: XML, Java</p>
-    </li>
+    <li>Full Stack Web: HTML, CSS, JavaScript, Git, Github, Visual Studio, Slack</li>
+      <li>Android Dev: XML, Java</li>
   </ul>
 </section>
 
 <section class="work">
+  <h2>Work Experience</h2>
   <div>
     <h3>Executive Director</h3>
-    <h4>Global Entrepreneurship Program Indonesia, Jakarta - Indonesia</h4>
-    <h4>July 2013 - April 2016</h4>
+    <h3>Global Entrepreneurship Program Indonesia, Jakarta - Indonesia</h3>
+    <h3>July 2013 - April 2016</h3>
     <p>Started out as a Program Manager managing the launch of Ciputra GEPI incubator 
       and promoted to Executive Director role after a year, at the age of 29. 
     During her time as ED, Angelyn oversaw the launch of Angel Investment Network Indonesia,
@@ -59,8 +60,8 @@ Angelyn was the first ED of GEPI to start revenue-generating, financially sustai
   </div>
   <div>
     <h3>Program Manager</h3>
-    <h4>Berita Satu Media Group, Jakarta - Indonesia</h4>
-    <h4>August 2008 - August 2011</h4>
+    <h3>Berita Satu Media Group, Jakarta - Indonesia</h3>
+    <h3>August 2008 - August 2011</h3>
     <p>Angelyn started out as a Management Trainee for Jakarta Globe, an English language newspaper.
       She was entrusted to introduce the paper to Ambassadors and Press Attaches at various embassies, 
       and was promoted to Social Media Manager after increasing the paper's social media presence on Facebook
@@ -73,7 +74,9 @@ Angelyn was the first ED of GEPI to start revenue-generating, financially sustai
 <footer>
   <section class="contact">
     <h2>Get in touch</h2>
-    <form action="action_page.php">
+    <address>angelynaliem@gmail.com</address>
+    <form id="contact" action="action_page.php">
+      <div>
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="First name">
       <label for="lname">Last Name</label>
@@ -83,6 +86,7 @@ Angelyn was the first ED of GEPI to start revenue-generating, financially sustai
       <label for="message">Message</label>
       <textarea id="message" name="message" placeholder="Write your message here" style="height: 200px;"></textarea>
       <input type="submit" value="Submit">
+    </div>
     </form>
   </section> 
 </footer>

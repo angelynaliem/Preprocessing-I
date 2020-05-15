@@ -1,41 +1,68 @@
 html {
   font-size: 62.5%;
 }
-#titleColor {
-  color: #FF5733;
-  font-size: 3rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font: bold;
-}
-#subtitleColor {
-  color: #046E3F;
-  font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font: italic;
-}
-#paragraphColor {
-  color: #404244;
-  font-size: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 .navMixin {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .footerMixin {
   display: flex;
   flex-direction: column;
 }
-.container {
+body {
   background-color: burlywood;
+}
+body .container {
+  color: #FF5733;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .intro h2 {
   color: #046E3F;
-  font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font: italic;
+}
+.intro p {
+  color: #404244;
+}
+.skills h2 {
+  color: #046E3F;
+}
+.skills ul {
+  color: #404244;
+}
+.work h2 {
+  color: #046E3F;
+}
+.work h3 {
+  color: #621770;
+}
+.work p {
+  color: #404244;
+}
+.contact div {
+  display: flex;
+  flex-direction: column;
+}
+.contact h2 {
+  color: #046E3F;
+}
+.contact label {
+  color: #404244;
+}
+.contact address {
+  display: none;
+}
+@media (max-width: 500px) {
+  .contact div {
+    display: none;
+  }
+  .contact address {
+    display: list-item;
+  }
 }
